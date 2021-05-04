@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "Demo-App"
+  description: "Test"
+  annotations:
+    github.com/project-slug: Mitrug/demo-app
+    backstage.io/techdocs-ref: url:https://github.com/Mitrug/demo-app
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "massimo"
