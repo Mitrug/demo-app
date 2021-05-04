@@ -12,7 +12,7 @@ public class GreeterService extends GreeterGrpc.GreeterImplBase {
   public void sayHello(final GreeterOuterClass.HelloRequest request,
                        final StreamObserver<GreeterOuterClass.HelloReply> responseObserver) {
     final GreeterOuterClass.HelloReply.Builder replyBuilder =
-        GreeterOuterClass.HelloReply.newBuilder().setMessage("Hello " + request.getName());
+        GreeterOuterClass.HelloReply.newBuilder().setMessage("Hello legendary " + request.getName());
     responseObserver.onNext(replyBuilder.build());
     responseObserver.onCompleted();
   }
